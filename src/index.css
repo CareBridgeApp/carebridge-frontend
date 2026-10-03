@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #2563eb;      /* main brand blue - buttons, links */
+  --color-primary-dark: #1e40af; /* hover states */
+  --color-bg: #f8fafc;           /* page background */
+  --color-surface: #ffffff;      /* cards/panels */
+  --color-border: #e2e8f0;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-success: #16a34a;      /* e.g. "report uploaded" */
+  --color-warning: #d97706;      /* e.g. "prescription expiring" */
+  --color-danger: #dc2626;       /* use sparingly — NOT for AI summaries */
+
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+}
