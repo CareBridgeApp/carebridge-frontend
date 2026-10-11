@@ -8,7 +8,8 @@ const DashboardLayout = () => {
   return (
     <div className='h-dvh flex flex-col bg-bg'>
 
-      <Topbar onMenuClick={()=>setMobileOpen(true)}/>
+      <Topbar onMenuClick={()=> mobileOpen?setMobileOpen(false):setMobileOpen(true)
+        }/>
 
       <div className='flex flex-1 min-h-0 relative'>
 
@@ -22,7 +23,6 @@ const DashboardLayout = () => {
             <aside className='absolute left-0 top-0 w-[85%] max-w-72 h-full bg-surface'>
               <Sidebar onNavigate={()=>setMobileOpen(false)}/>
             </aside>
-            
           </div>
         )}
 
