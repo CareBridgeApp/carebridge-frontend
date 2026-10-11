@@ -1,9 +1,12 @@
-import { Bell } from "lucide-react"
+import { Bell, Menu } from "lucide-react"
 import defaultAvatar from './../../../components/default-avatar.png'
 import heartBeatLogo from './../../../components/heart-beat-logo.png'
-const Topbar = () => {
+const Topbar = (props) => {
   return (
     <div className="h-16 flex items-center justify-between px-2 py-2 bg-surface border-b border-border/40 select-none">
+      <button className="">
+        <Menu className="h-6 w-6" onClick={props.onMenuClick}/>
+      </button>
       <div className="flex items-center gap-1 min-w-0">
         <img
           className="h-14 w-auto object-contain shrink-0"

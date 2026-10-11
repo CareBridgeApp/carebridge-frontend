@@ -10,7 +10,7 @@ const navByRole = {
   doctor: doctorNav,
 }
 
-const Sidebar = () => {
+const Sidebar = ({onNavigate}) => {
   const { user, logout } = useContext(AuthContext);
 
   const items = navByRole[user.role] ?? [];
@@ -23,6 +23,7 @@ const Sidebar = () => {
             key={path}
             to={path}
             end={end}
+            onClick={onNavigate}
             className={({ isActive }) => cn("flex items-center gap-2 h-10 px-3 border border-transparent rounded-2xl  transition-colors", isActive ? "text-primary font-medium bg-primary/20" : "text-text hover:text-primary")}
           >
             <Icon className="h-5 w-5" />
