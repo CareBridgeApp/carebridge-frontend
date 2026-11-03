@@ -2,8 +2,9 @@ import { createContext, useEffect, useState } from 'react'
 import api, { publicApi, registerLogout } from '../api/api'
 
 export const AuthContext = createContext()
+
 export function AuthProvider({ children }) {
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState();
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {

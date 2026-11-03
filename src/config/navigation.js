@@ -1,12 +1,13 @@
-import {FileText, Pill, CalendarDays, LineChart, MessageSquare, Users, LayoutDashboard} from 'lucide-react'
+import {FileText, Pill, CalendarDays, LineChart, MessageSquare, Users, LayoutDashboard, Search, Bot, File} from 'lucide-react'
 
 export const patientNav = [
     {label: "Overview", path: "/patient-dashboard", icon: LayoutDashboard, end:true},
-    {label: "Reports", path: "/patient-dashboard/reports", icon: FileText},
-    {label: "Medicines", path: "/patient-dashboard/medicines", icon: Pill},
+    {label: "Find Doctors", path: "/patient-dashboard/find-doctors", icon: Search},
     {label: "Appointments", path: "/patient-dashboard/appointments", icon: CalendarDays},
-    {label: "Health Trends", path: "/patient-dashboard/trends", icon: LineChart},
-    {label: "Ask My Records", path: "/patient-dashboard/ask", icon: MessageSquare},
+    {label: "Reports", path: "/patient-dashboard/reports", icon: File},
+    {label: "Medicines", path: "/patient-dashboard/medicines", icon: Pill},
+    {label: "Medical Records", path: "/patient-dashboard/medical-records", icon: FileText},
+    {label: "CareBridge Ai", path: "/patient-dashboard/ask", icon: Bot},
 ]
 
 export const doctorNav = [

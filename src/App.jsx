@@ -9,10 +9,12 @@ import DashboardLayout from "./features/dashboards/layout/DashboardLayout"
 import Reports from "./features/dashboards/patient/Reports"
 import Medicines from "./features/dashboards/patient/Medicines"
 import Appointments from "./features/dashboards/patient/Appointments"
-import Trends from "./features/dashboards/patient/Appointments"
+import Trends from "./features/dashboards/patient/Trends"
 import AskMyRecords from "./features/dashboards/patient/AskMyRecords"
 import PatientOverview from "./features/dashboards/patient/PatientOverview"
 import PublicRoute from "./routes/PublicRoute"
+import FindDoctors from "./features/dashboards/patient/FindDoctors"
+import MedicalRecords from "./features/dashboards/patient/MedicalRecords"
 const App = () => {
   return (
     <div>
@@ -31,9 +33,10 @@ const App = () => {
               <Route path="/patient-dashboard" element={<PatientDashboard />}>
                 <Route index element={<PatientOverview />} />
                 <Route path="reports" element={<Reports />} />
+                <Route path="find-doctors" element={<FindDoctors/>} />
                 <Route path="medicines" element={<Medicines />} />
                 <Route path="appointments" element={<Appointments />} />
-                <Route path="trends" element={<Trends />} />
+                <Route path="medical-records" element={<MedicalRecords/>} />
                 <Route path="ask" element={<AskMyRecords />} />
               </Route>
               <Route path="/doctor-dashboard" element={<DoctorDashboard />} />
